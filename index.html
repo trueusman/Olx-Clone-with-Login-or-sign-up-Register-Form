@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>OLx Clone</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<header>
+  <div class="container header-content">
+    <div class="logo">Olx Clone</div>
+    <nav class="nav-buttons">
+      <div id="user-info"></div>
+      <button id="show-login" class="btn">Login</button>
+      <button id="show-register" class="btn">Register</button>
+      <button id="logout-btn" class="btn hidden">Logout</button>
+    </nav>
+  </div>
+</header>
+
+
+<main class="container">
+ <!-- Login form -->
+<div id="login-form" class="auth-container hidden">
+  <h2>Login</h2>
+  <span class="close-btn" id="close-login">&times;</span>
+  <input type="email" id="login-email" placeholder="Email">
+  <input type="password" id="login-password" placeholder="Password">
+  <button id="do-login-btn" class="btn">Login</button>
+  <p>Don't have an account? <a href="#" id="go-register">Register</a></p>
+</div>
+
+<!-- Register form -->
+<div id="register-form" class="auth-container hidden">
+  <h2>Register</h2>
+  <span class="close-btn" id="close-register">&times;</span>
+  <input type="text" id="reg-name" placeholder="Full Name">
+  <input type="email" id="reg-email" placeholder="Email">
+  <input type="password" id="reg-password" placeholder="Password">
+  <button id="register-btn" class="btn">Register</button>
+  <p>Already have an account? <a href="#" id="go-login">Login</a></p>
+</div>
+
+  <!-- Products -->
+  <section id="products" class="products"></section>
+</main>
+
+<footer>
+  <div class="container">
+    &copy; 2025 OLX Clone. Made By Muhammad USman Ghani.
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
